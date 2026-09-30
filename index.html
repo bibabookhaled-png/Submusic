@@ -403,6 +403,16 @@ footer{background:#080706;border-top:1px solid var(--line-soft);padding:clamp(60
   .rv{opacity:1;transform:none}
   .hero h1 .uq path{stroke-dashoffset:0}
 }
+
+.video-gallery-head{margin-top:48px;margin-bottom:22px;display:flex;justify-content:space-between;gap:24px;align-items:end}
+.video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.work-video{margin:0;background:#161410;border:1px solid rgba(220,165,76,.25);border-radius:14px;overflow:hidden;opacity:1!important;transform:none!important}
+.work-video video{width:100%;display:block;aspect-ratio:16/9;background:#0C0B09;object-fit:cover}
+.work-video figcaption{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px}
+.work-video .video-kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold,#DCA54C)}
+.work-video strong{font-size:15px;color:var(--cream,#F5F0E6)}
+.work-video figcaption span:last-child{color:rgba(245,240,230,.65);font-size:13px}
+
 </style>
 </head>
 <body id="top">
@@ -565,8 +575,8 @@ footer{background:#080706;border-top:1px solid var(--line-soft);padding:clamp(60
           <span class="w-arrow" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
         </div>
       </div>
-      <p class="w-list-note rv">— التراكات مستضافة هنا مباشرة. لينك النشر الأصلي جوه تفاصيل كل مشروع.</p>
-      <div class="video-gallery-head rv">
+      <p class="w-list-note rv in">— التراكات مستضافة هنا مباشرة. الفيديوهات تحت القائمة مباشرة ↓ ولو مش باينة افتحي <a href="#videos" style="color:var(--gold);text-decoration:underline">قسم الفيديو</a>.</p>
+      <div id="videos" class="video-gallery-head rv in">
         <div>
           <p class="eyebrow kicker">Visual proof / إثبات بصري</p>
           <h3>Made for the client. واضح لمين.</h3>
@@ -574,36 +584,36 @@ footer{background:#080706;border-top:1px solid var(--line-soft);padding:clamp(60
         <p>كل فيديو هنا عليه كارت نهاية باسم العميل بالإنجليزي والعربي — عشان نسبة الشغل بصاحبه تفضل واضحة.</p>
       </div>
       <div class="video-grid">
-        <figure class="work-video rv">
-          <video controls preload="metadata" playsinline src="video/city-of-music.mp4" aria-label="City of Music Abu Dhabi — مدينة الموسيقى أبوظبي"></video>
+        <figure class="work-video rv in">
+          <video controls preload="metadata" playsinline poster="video/posters/city-of-music.jpg" src="video/city-of-music.mp4" aria-label="City of Music Abu Dhabi — مدينة الموسيقى أبوظبي"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>City of Music Abu Dhabi</strong><span>مدينة الموسيقى أبوظبي</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:60ms">
-          <video controls preload="metadata" playsinline src="video/jahez.mp4" aria-label="Jahez — جاهز"></video>
+        <figure class="work-video rv in" style="--d:60ms">
+          <video controls preload="metadata" playsinline poster="video/posters/jahez.jpg" src="video/jahez.mp4" aria-label="Jahez — جاهز"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>Jahez</strong><span>جاهز</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:120ms">
-          <video controls preload="metadata" playsinline src="video/mcdonalds-ksa.mp4" aria-label="McDonald's KSA — ماكدونالدز السعودية"></video>
+        <figure class="work-video rv in" style="--d:120ms">
+          <video controls preload="metadata" playsinline poster="video/posters/mcdonalds-ksa.jpg" src="video/mcdonalds-ksa.mp4" aria-label="McDonald's KSA — ماكدونالدز السعودية"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>McDonald's KSA</strong><span>ماكدونالدز السعودية</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:180ms">
-          <video controls preload="metadata" playsinline src="video/trident.mp4" aria-label="Trident Egypt — ترايدنت مصر"></video>
+        <figure class="work-video rv in" style="--d:180ms">
+          <video controls preload="metadata" playsinline poster="video/posters/trident.jpg" src="video/trident.mp4" aria-label="Trident Egypt — ترايدنت مصر"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>Trident Egypt</strong><span>ترايدنت مصر</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:240ms">
-          <video controls preload="metadata" playsinline src="video/hag-ellilah.mp4" aria-label="Hag Ellilah — هاج الليلة"></video>
+        <figure class="work-video rv in" style="--d:240ms">
+          <video controls preload="metadata" playsinline poster="video/posters/hag-ellilah.jpg" src="video/hag-ellilah.mp4" aria-label="Hag Ellilah — هاج الليلة"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>Hag Ellilah</strong><span>هاج الليلة</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:300ms">
-          <video controls preload="metadata" playsinline src="video/whiskinnaround.mp4" aria-label="Whiskinnaround — ويسكنيناروند"></video>
+        <figure class="work-video rv in" style="--d:300ms">
+          <video controls preload="metadata" playsinline poster="video/posters/whiskinnaround.jpg" src="video/whiskinnaround.mp4" aria-label="Whiskinnaround — ويسكنيناروند"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>Whiskinnaround</strong><span>ويسكنيناروند</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:360ms">
-          <video controls preload="metadata" playsinline src="video/china-uae.mp4" aria-label="China–UAE — الصين والإمارات"></video>
+        <figure class="work-video rv in" style="--d:360ms">
+          <video controls preload="metadata" playsinline poster="video/posters/china-uae.jpg" src="video/china-uae.mp4" aria-label="China–UAE — الصين والإمارات"></video>
           <figcaption><span class="video-kicker">CLIENT / العميل</span><strong>China–UAE</strong><span>الصين والإمارات</span></figcaption>
         </figure>
-        <figure class="work-video rv" style="--d:420ms">
-          <video controls preload="metadata" playsinline src="video/showreel.mp4" aria-label="Sabri Salah Showreel — شوريل صبري صلاح"></video>
+        <figure class="work-video rv in" style="--d:420ms">
+          <video controls preload="metadata" playsinline poster="video/posters/showreel.jpg" src="video/showreel.mp4" aria-label="Sabri Salah Showreel — شوريل صبري صلاح"></video>
           <figcaption><span class="video-kicker">PORTFOLIO / بورتفوليو</span><strong>Sabri Salah Showreel</strong><span>شوريل صبري صلاح</span></figcaption>
         </figure>
       </div>
